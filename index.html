@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Mahlomola Letuka">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Website Layout</title>
+  
+  <!-- CSS -->
+  <link href="styles.css" rel="stylesheet">
+
+   <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar" >
+    <div class="container">
+      <div class="logo">
+          LOGO
+      </div>
+      <button class="menu-btn" id="menuToggle" onclick="openNavbar()">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="menuClose" onclick="closeNavbar()">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div id="overlay" onclick="closeNavbar()"></div>
+  </header>
+  <section id="home" class="pg">HOME</section>
+  <section id="about" class="pg">ABOUT</section>
+  <section id="services" class="pg">SERVICES</section>
+  <section id="contact" class="pg">CONTACT</section>
+</body>
+</html>
+
+
