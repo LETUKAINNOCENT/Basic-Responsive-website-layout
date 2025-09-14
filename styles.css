@@ -37,7 +37,7 @@ header.navbar {
   z-index: 10;
 }
 
-header.container {
+header .container {
   max-width: 1200px;
   margin: 0 auto; 
   padding: 1.25rem;
@@ -187,4 +187,5 @@ header.container {
     display: block;
   }
 }
+
 
