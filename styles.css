@@ -70,11 +70,6 @@ header .container {
   transition: color 0.3s; 
 }
 
-.nav-links a span {
-  color: var(--aquamarine);
-  margin-right: 0.5rem;
-}
-
 .nav-links a:hover {
   color: var(--aquamarine);
 }
@@ -165,7 +160,7 @@ header .container {
 }
 
 /* Responsive rules */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav-links {
     display: none;
   }
@@ -187,5 +182,6 @@ header .container {
     display: block;
   }
 }
+
 
 
